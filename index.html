@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<link rel="stylesheet" href="./assets/styleImc.css">
+<body>
+    
+<section class="container" >
+<form  class="form">
+    <h2>Tabela IMC</h2>
+    <table>
+        <tr>
+            <tr>
+                <td>IMC</td>
+                <td>Resultado</td>
+            </tr>
+            <td>Abaixo de 17</td>
+            <td>Muito abaixo do peso</td>
+        </tr>
+        <tr>
+            <td>Entre 17 e 18,49</td>
+            <td>Abaixo do peso</td>
+        </tr>
+        <tr>
+            <td>Entre 18,5 e 24,99</td>
+            <td>Peso normal</td>
+        </tr>
+        <tr>
+            <td>Entre 25 e 29,99</td>
+            <td>Acima do peso</td>
+        </tr>
+        <tr>
+            <td>Entre 30 e 34,99</td>
+            <td>Obesidade |</td>
+        </tr>
+        <tr>
+            <td>Entre 35 e 39,99</td>
+            <td>Obesidade || (severa)</td>
+        </tr>
+        <tr>
+            <td>Acima de 40</td>
+            <td>Obesidade ||| (mórbida)</td>
+        </tr>
+    </table>
+    <p>Peso: <input type="text" id="peso"></p>
+    <p>Altura: <input type="text" id="altura"></p>
+
+    <button type="submit">Calcular</button>
+</form>
+<div id="resultado"></div>
+</section>
+
+<script src="./imc.js"></script>
+</body>
+</html>

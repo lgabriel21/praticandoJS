@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap');
+:root{
+    --primary-color: rgba(161, 217, 217, 0.6);
+}
+*{
+    box-sizing: border-box;
+    outline: 0;
+}
+body{
+    padding: 0;
+    margin: 0;
+    background:url(papeldeparede.jpg);
+}
+.container{
+    max-width: 640px;
+    margin: 50px auto;
+    background: rgba(255, 255, 255, 0.692);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    font-family: "Open sans", sans-serif;
+}
+
+form input, form p, form button{
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+}
+form input{
+    padding: 8px;
+    outline: var(--primary-color);
+    border-radius: 5px;
+    border: none;
+    background: rgba(163, 185, 235, 0.836);
+}
+form button{
+    background: rgba(0, 34, 255, 0.475);
+    padding: 6px;
+    width: 80%;
+    margin: 50px auto;
+    border-radius: 5px;
+}
+form button:hover{
+    cursor: pointer;
+    background: rgba(163, 185, 235, 0.836);
+    color: rgb(0, 0, 0);
+}
+.paragrafo-resultado{
+    background: rgb(125, 250, 250);
+    padding: 5px;
+    border-radius: 4px;
+}
+.bad{
+    background: rgb(243, 153, 153);
+    padding: 4px;
+    border-radius: 4px;
+}
