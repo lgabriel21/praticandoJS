@@ -31,11 +31,11 @@ function getNivelImc(imc) {
     const nivel = ['Muito abaixo do peso', 'Abaixo do peso', 'Peso normal', 'Acima do peso', 'Obesidade 1', 'Obesidade 2(severa)', 'Obesidade 3(mórbida)'];
 
     if (imc < 17) { return nivel[0]; }
-    else if (imc === 17 && imc < 18.49) { return nivel[1]; }
-    else if (imc === 18.5 && imc < 24.99) { return nivel[2]; }
-    else if (imc === 25 && imc < 29.99) { return nivel[3]; }
-    else if (imc == 30 && imc < 34.99) { return nivel[4]; }
-    else if (imc == 35 && imc < 39.99) { return nivel[5]; }
+    else if (imc <= 18.49) { return nivel[1]; }
+    else if (imc <= 24.99) { return nivel[2]; }
+    else if (imc <= 29.99) { return nivel[3]; }
+    else if (imc <= 34.99) { return nivel[4]; }
+    else if (imc <= 39.99) { return nivel[5]; }
     else if (imc > 39.99) { return nivel[6]; }
 
     console.log(nivel.length);
